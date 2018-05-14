@@ -1,13 +1,13 @@
 function palindrome(str) {
- var myString = str.replace(/[\W_]/g, '').toLowerCase();
+ var myString = str.replace(/[\W_]/g, '').toLowerCase()
 
   if (myString === myString.split('').reverse().join('')) {
-  return true;
+  return true
 } else {
-  return false;
+  return false
 }
 }
 
 
 
-console.log(palindrome("eye"));
+console.log(palindrome("eye"))
