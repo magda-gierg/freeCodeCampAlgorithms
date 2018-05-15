@@ -11,5 +11,6 @@ function factorialize(num) {
       return a*b
     })
   }
+}
 
 console.log(factorialize(5))
