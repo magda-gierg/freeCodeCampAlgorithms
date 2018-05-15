@@ -5,10 +5,9 @@ function factorialize(num) {
     arr.push(i)
   }
 
-  var result = arr.reduce(function(a,b) {  /* a-accumulator and b-next value in the array   */
+  return arr.reduce(function(a,b) {  /* a-accumulator and b-next value in the array   */
     return a*b
   })
-  return result
 }
 
 console.log(factorialize(5))
