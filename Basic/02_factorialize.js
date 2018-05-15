@@ -1,8 +1,14 @@
 function factorialize(num) {
-  for (a = 1; num >= 1; num--) {
-    a = num * a
+
+  var arr = []
+  for (var i = 1; i <= num; i++) {
+    arr.push(i)
   }
-  return a
+
+  var result = arr.reduce(function(a,b) {  /* a-accumulator and b-next value in the array   */
+    return a*b
+  })
+  return result
 }
 
 console.log(factorialize(5))
